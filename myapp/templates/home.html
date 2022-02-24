@@ -9,6 +9,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <script>
+      function fun()
+      {
+        x=prompt("enter a number")
+        // alert(x)
+        // confirm("done")
+        if (x%2==0)
+        {
+          alert("divisible by 2")
+        }
+        else
+        {
+          alert("not divisible by 2")
+        }
+        var student = {faname:"Hiran",Iname:"Sidharth", age:21};
+        for(prop in student){
+          console.log(prop + ' is ' + student[prop]);
+        }
+        for(i=0;i<4;i++)
+        {
+          document.write("<br>")
+          for(j=0;j<=i;j++)
+          {
+            document.write("*");
+          }
+        }}
+    </script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -50,8 +77,13 @@
   <CENTER>
   <div class = "container"><h1>HAHAHAHAHAH</h1></div>
   <h1>WELCOME TO HOME PAGE</h1> 
-    
+    <br><br>
   <button type="button" onclick="alert('cybersquare')" class="btn btn-dark">ENTER</button>
+
+  <br>
+  <br>
+  <br><br><br>
+  <button onclick="fun()" class="btn btn-danger">SUBMIT</button>
 </CENTER> 
 </body>
 </html>
